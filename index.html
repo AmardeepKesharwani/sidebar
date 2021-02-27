@@ -1,0 +1,100 @@
+<!-- 
+    ✨ name : navbar || sidebar 
+    ✨ created by : Amardeep Kesharwani,
+    ✨ Date : 29-07-2020,
+ 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="developer" content="Amardeep kesharwani">
+    <title>navbar || sidebar </title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" href="favicon.png">
+</head>
+
+<body>
+    <main class="main">
+        <div class="nav-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="content">
+            <h1>Hello friends</h1>
+            <h2>I'm <i>Amardeep Kesarwani</i></h2>
+            <p>I'm <span id="profession"></span> </p>
+        </div>
+        <div class="action-btn-group">
+            <button class="btn-1"><span class="material-icons">favorite</span></button>
+            <button class="btn-2"><span class="material-icons">web</span></button>
+            <button class="btn-3"><span class="material-icons">visibility</span></button>
+
+            <button class="action-btn"><span class="material-icons">edit</span></button>
+        </div>
+    </main>
+    <aside class="sidebar">
+        <div class="sidebar_header" onclick="hideSidebar()">
+            <div class="img">
+                <img src="https://api.sololearn.com/Uploads/Avatars/9151475.jpg" alt="">
+            </div>
+            <div>
+                <h3>Amardeep Kesharwani</h3>
+                <small>amardeep@gmail.com</small>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search" placeholder="Search here..." />
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="https://www.sololearn.com/Profile/9151475/?ref=app"><span class="material-icons">home</span>
+                    <p>Home</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://code.sololearn.com/WiFWdENeOM5R/?ref=app"><span class="material-icons">person</span>
+                    <p>My Profile</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://code.sololearn.com/W1LwBgn84sv7/?ref=app"><span class="material-icons">chat</span>
+                    <p>Message</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="drop-down"><span class="material-icons">web</span>
+                    <p>Projects</p> <span class="material-icons carrot">expand_more</span>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="https://code.sololearn.com/W43S66Ad1RqY/?ref=app">Solo Dating</a></li>
+                    <li><a href="https://code.sololearn.com/Wpvk1RKLKoer/?ref=app">Solo Market</a></li>
+                    <li><a href="https://code.sololearn.com/WxsUzmaDFJW6/?ref=app">Solo Video</a></li>
+                    <li><a href="https://code.sololearn.com/Wg1YAzz1dILu/?ref=app">Solo Yoga</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="material-icons">group_add</span>
+                    <p>Contact Us</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"><span class="material-icons">info</span>
+                    <p>About Us</p>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <div class="overlay" onclick="hideSidebar()"></div>
+    <audio src="https://mobcup.net/d/fdtbw5i8/mp3" id="music"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
